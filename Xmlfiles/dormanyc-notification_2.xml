@@ -1,0 +1,23 @@
+<dormancyNotification>
+<type>DormancyNotification</type>
+<email>kevinkenei9@gmail</email>
+<address>
+Title, Name and Surname
+Company Name
+Address line 1
+Address line 2
+Address line 3
+Postal Code
+</address>
+<segment>Insert Department
+here… e.g
+Corporate and
+Investment Banking</segment>
+<date>22nd June, 2016</date>
+<drafter>
+Eric Ngeera
+</drafter>
+<branchCode>001</branchCode>
+<branchName>Branch Manager, Digo Road Branch</branchName>
+<accountNumber>123456</accountNumber>
+</dormancyNotification>

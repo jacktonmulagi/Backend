@@ -1,0 +1,33 @@
+<statementLetter>
+<type>LOAN_STATEMENT</type>
+<email>kevinkenei9@gmail</email>
+<address>THOK MALONG CHOL
+P.O BOX 73699 00200
+NAIROBI KENYA
+</address>
+<agreementId>AA19183Q6YRD</agreementId>
+<amountFinanced>4555556</amountFinanced>
+<accruedPrincipalInterest>2345</accruedPrincipalInterest>
+<paymentStartDate>15 AUG 2020</paymentStartDate>
+<totalOutstandingBalance>379,770</totalOutstandingBalance>
+<registrationNo>KCU 411E</registrationNo>
+<makeNo>SUZUKI EVERY</makeNo>
+<insuranceCompany>HER</insuranceCompany>
+<policyNumber>101977002331</policyNumber>
+<insuranceExpDate>13 JuN 2020</insuranceExpDate>
+<customerNo>1001</customerNo>
+<accountNo>12345678</accountNo>
+<accountName>John Doe</accountName>
+<statementPeriod>1212</statementPeriod>
+<installmentAmount>2345</installmentAmount>
+<statementDate>20/10/2020</statementDate>
+<accruedPenalty>1000</accruedPenalty>
+<paymentEndDate>31/12/2020</paymentEndDate>
+<totalArrears>1000</totalArrears>
+<date>15 JAN 2020</date>
+<description>Long term insurance fee due</description>
+<valueDate>15 Jan 2020</valueDate>
+<interestDue>345.95</interestDue>
+<repaymentAmount>19,456.40</repaymentAmount>
+<availableBalance>4590</availableBalance>
+</statementLetter>

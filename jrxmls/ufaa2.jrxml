@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ufaa2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2f7da9d7-ae31-45fa-9ff9-422078ac22e3">
+	<queryString language="xPath">
+		<![CDATA[/ufaa]]>
+	</queryString>
+	<field name="type" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="type"/>
+		<fieldDescription><![CDATA[type]]></fieldDescription>
+	</field>
+	<field name="title" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="title"/>
+		<fieldDescription><![CDATA[title]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="address"/>
+		<fieldDescription><![CDATA[address]]></fieldDescription>
+	</field>
+	<field name="segment" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="segment"/>
+		<fieldDescription><![CDATA[segment]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="date"/>
+		<fieldDescription><![CDATA[date]]></fieldDescription>
+	</field>
+	<field name="drafter" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="drafter"/>
+		<fieldDescription><![CDATA[drafter]]></fieldDescription>
+	</field>
+	<field name="submissionDate" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="submissionDate"/>
+		<fieldDescription><![CDATA[submissionDate]]></fieldDescription>
+	</field>
+	<field name="branchCode" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="branchCode"/>
+		<fieldDescription><![CDATA[branchCode]]></fieldDescription>
+	</field>
+	<field name="branchName" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="branchName"/>
+		<fieldDescription><![CDATA[branchName]]></fieldDescription>
+	</field>
+	<field name="accountNumber" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="accountNumber"/>
+		<fieldDescription><![CDATA[accountNumber]]></fieldDescription>
+	</field>
+	<field name="amount" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="amount"/>
+		<fieldDescription><![CDATA[amount]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="119" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+		</band>
+	</title>
+	<detail>
+		<band height="540" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="1" y="3" width="130" height="20" uuid="7cfee521-9f99-4b57-9e31-39156e19d0dd"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="30" width="180" height="80" uuid="7c2a43e9-d161-4785-b5bd-47b005007307"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="30" width="130" height="51" uuid="ee2ce21c-498e-474c-8c44-606bb9db569a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{segment}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="60" width="100" height="30" uuid="b6a99a57-570d-422b-a393-16379b5e4cb9"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Dear Sir/Madam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="90" width="420" height="30" uuid="e09b61ea-0e11-430e-a7ef-0c6363c100cd"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[SUBJECT: FUNDS REMITTED TO UFAA FROM ACCOUNT NO: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="349" y="90" width="100" height="30" uuid="4d694f62-a31b-47a1-a702-421c7c90d12a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="false" isUnderline="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accountNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="110" width="550" height="50" uuid="ad799746-3ca8-4186-80e6-f4da167c5de3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[The Unclaimed Financial Assets Act (2011) requires all financial institutions to surrender to the Unclaimed Financial Assets Authority (“UFAA”), any funds that have been held by the institution for a period of sixty (60) months or more without any formal written communication from the owner of the funds during this period.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="156" width="550" height="50" uuid="fef6dba4-ef7d-4883-8b02-1adb05b9266c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[In compliance with the said Act, we would like to inform you that on]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="359" y="156" width="100" height="20" uuid="39e1b033-2104-4060-967c-d5b9d73fe695"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{submissionDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="445" y="155" width="100" height="30" uuid="26b5f374-46f5-4598-9877-692a687af7f2"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[, we remitted ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="175" width="430" height="30" uuid="443133d2-9642-4a84-a503-9eda2f8fb5ba"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[from the referred account number to the UFAA. Please note that upon surrender ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="176" width="100" height="30" uuid="0a9e6a2c-2edc-4a03-9aa1-66530eecab42"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-1" y="192" width="550" height="108" uuid="88b63411-a827-4278-8fa7-a1cd79fccb61"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[of funds to the UFAA, financial institutions are discharged of all obligations with respect to those funds. We therefore advise that you contact the UFAA for any queries on the claim of the funds.
+
+In case you require any clarification in regard to the above, kindly contact the undersigned on		 3638000, 3269000, 0711068000 or 0732113000.
+	
+Yours faithfully,
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="290" width="180" height="70" uuid="92ef56d8-c9b6-4ce0-80c9-e95e1cc94ec0"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{drafter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="320" width="100" height="30" uuid="b351f1a2-0556-4398-8a60-bd4dc7da2630"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{branchName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="140" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="0" y="10" width="570" height="130" uuid="8a468275-0e97-492e-b8fa-d15cfb3dddd9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[
+Stanbic Bank Kenya Limited, Stanbic Bank Centre, Westlands Road, Chiromo / P.O. Box 30550 – 00100, Nairobi, Kenya  
+Tel: (Switchboard) +254 (20) 326 8000 Fax +254 (20) 375290 / SWIFT: SBICKENX / customercare@stanbic.com / stanbicbank.co.ke
+
+Stanbic Bank Kenya Ltd is licensed by the Central Bank of Kenya.  Reg. No. 9520. A member of Standard Bank Group.
+Directors: : F. N. Ojiambo, MBS, SC (Chairman), Charles Mudiwa* (Chief Executive), G. R. Brackenridge**,  R. W. Kimotho,  K. Mbathi, R. T. Ngobi, E. W. Njoroge,  P. N. Gethi, R. B. Osoro, C. J. Blandford-Newson***	
+Company Secretary: Lillian Mbindyo 
+*Zimbabwean **South African ***South African & British 
+  
+]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

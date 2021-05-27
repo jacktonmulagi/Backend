@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dormancyreport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="672d42ab-683b-4a2c-bab8-9e423c2849a2">
+	<queryString language="xPath">
+		<![CDATA[/dormancyNotification]]>
+	</queryString>
+	<field name="type" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="type"/>
+		<fieldDescription><![CDATA[type]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="email"/>
+		<fieldDescription><![CDATA[email]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="address"/>
+		<fieldDescription><![CDATA[address]]></fieldDescription>
+	</field>
+	<field name="segment" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="segment"/>
+		<fieldDescription><![CDATA[segment]]></fieldDescription>
+	</field>
+	<field name="date" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="date"/>
+		<fieldDescription><![CDATA[date]]></fieldDescription>
+	</field>
+	<field name="drafter" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="drafter"/>
+		<fieldDescription><![CDATA[drafter]]></fieldDescription>
+	</field>
+	<field name="branchCode" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="branchCode"/>
+		<fieldDescription><![CDATA[branchCode]]></fieldDescription>
+	</field>
+	<field name="branchName" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="branchName"/>
+		<fieldDescription><![CDATA[branchName]]></fieldDescription>
+	</field>
+	<field name="accountNumber" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="accountNumber"/>
+		<fieldDescription><![CDATA[accountNumber]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="99" splitType="Stretch"/>
+	</title>
+	<detail>
+		<band height="456" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<textField>
+				<reportElement x="0" y="2" width="100" height="16" uuid="c4666f39-76d9-4c25-a98d-c0b05da22e24"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="18" width="190" height="80" uuid="13928430-5712-4c9e-8ca9-a11937d95b99"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="28" width="145" height="70" uuid="e55e1fa4-362b-4bd3-902a-aff49224b905"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{segment}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="98" width="100" height="17" uuid="8d9dfab3-11a8-4c24-93f7-fb616675f4f3"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Dear Sir/Madam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="120" width="470" height="30" uuid="05e866c7-7067-4c4c-8bb3-c485debae481"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[RE: ACCOUNT NUMBER ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="120" width="100" height="20" uuid="96c79327-c4b4-4c11-b2aa-e59d8ec2061e"/>
+				<textElement>
+					<font size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accountNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="143" width="560" height="208" uuid="a8e87323-afb9-44bc-90d1-17f9fdbbfa59"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[We wish to advise that the above-referenced account has been rendered dormant, since you have not carried out any transactions in the past twenty-four (24) months. 
+
+Should you wish to re-activate the account, kindly revert with written instructions to your domicile branch or any other branch of the Bank within the next THIRTY (30) DAYS. We also encourage you to keep your account active through continuous transactions to avoid any inconveniences that may result from closure after extended dormancy.
+
+We thank you for your co-operation in this regard and ask that you do not hesitate to contact us for further clarification.
+
+Thank you for choosing Stanbic Bank Kenya as your preferred financial service provider.
+
+
+Yours faithfully,
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="351" width="250" height="102" uuid="dc2a211a-f935-4c65-b1cd-3b5ebea1c829"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{drafter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="391" width="250" height="48" uuid="4c7065c8-2ea0-4bd9-9704-286ddef7b0b8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="25169f91-4b58-4c91-92d9-753dfa175ba7"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{branchName}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="560" height="62" uuid="8a42f846-dd35-4496-b8ca-ee209f5e6bcb"/>
+				<textElement>
+					<font fontName="Times New Roman" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Stanbic Bank Kenya Limited, Stanbic Bank Centre, Westlands Road, Chiromo / P.O. Box 30550 – 00100, Nairobi, Kenya  
+Tel: (Switchboard) +254 (20) 326 8000 Fax +254 (20) 375290 / SWIFT: SBICKENX / customercare@stanbic.com / stanbicbank.co.ke
+
+Stanbic Bank Kenya Ltd is licensed by the Central Bank of Kenya.  Reg. No. 9520. A member of Standard Bank Group.
+Directors: : F. N. Ojiambo, MBS, SC (Chairman), C. Mudiwa* (Chief Executive), G. R. Brackenridge**,  R. W. Kimotho,  K. Mbathi, R. T. Ngobi, E. W. Njoroge,  P. N. Gethi, R. B. Osoro, D. F. Kombo, and 
+C. J. Blandford-Newson***	
+Company Secretary: Lillian Mbindyo 
+*Zimbabwean **South African ***South African & British 
+]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

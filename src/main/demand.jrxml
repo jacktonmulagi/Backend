@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="demand2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="422e859a-bc75-4ebf-bf3c-799d7aefcfb8">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (3)"/>
+	<queryString language="xPath">
+		<![CDATA[/DemandLetter]]>
+	</queryString>
+	<field name="type" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="type"/>
+		<fieldDescription><![CDATA[type]]></fieldDescription>
+	</field>
+	<field name="title" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="title"/>
+		<fieldDescription><![CDATA[title]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="address"/>
+		<fieldDescription><![CDATA[address]]></fieldDescription>
+	</field>
+	<field name="segment" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="segment"/>
+		<fieldDescription><![CDATA[segment]]></fieldDescription>
+	</field>
+	<field name="demandDate" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="demandDate"/>
+		<fieldDescription><![CDATA[demandDate]]></fieldDescription>
+	</field>
+	<field name="drafter" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="drafter"/>
+		<fieldDescription><![CDATA[drafter]]></fieldDescription>
+	</field>
+	<field name="branchCode" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="branchCode"/>
+		<fieldDescription><![CDATA[branchCode]]></fieldDescription>
+	</field>
+	<field name="branchName" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="branchName"/>
+		<fieldDescription><![CDATA[branchName]]></fieldDescription>
+	</field>
+	<field name="accountNumber" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="accountNumber"/>
+		<fieldDescription><![CDATA[accountNumber]]></fieldDescription>
+	</field>
+	<field name="amount" class="java.lang.String">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="amount"/>
+		<fieldDescription><![CDATA[amount]]></fieldDescription>
+	</field>
+	<field name="interesetRate" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="interesetRate"/>
+		<fieldDescription><![CDATA[interesetRate]]></fieldDescription>
+	</field>
+	<field name="margin" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.xpath.field.expression" value="margin"/>
+		<fieldDescription><![CDATA[margin]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</title>
+	<detail>
+		<band height="400" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="0" y="0" width="210" height="70" uuid="4fcea6a9-7888-4282-9d55-768958b26f30"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="378" y="3" width="170" height="30" uuid="5d508245-bb42-4134-b850-39a8888430df"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{segment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="81" width="100" height="18" uuid="10387f6e-7ecb-45ee-a423-4fd93a3f79bb"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{demandDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="99" width="100" height="18" uuid="accac6a6-3a9b-444a-bd1e-6e4a1aef82d8"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Dear sir/Madam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="120" width="280" height="30" uuid="d528ae85-81ad-49dd-809d-1285c577abb9"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[RE: OVERDRAWN ACCOUNT NUMBER ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="221" y="120" width="134" height="30" uuid="7b3654f6-e2fd-4220-9dbd-ef0c53c68f44"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{accountNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="140" width="508" height="19" uuid="ac87e42a-3f03-401b-a1bc-e03385ba5580"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[We would like to bring to your attention that your above account is currently overdrawn by KES]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="460" y="140" width="89" height="30" uuid="c2095bd2-3d5d-45b1-b005-e75792766a60"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="154" width="570" height="37" uuid="43e2f1fe-9da0-4aac-9aa3-85be0f692c75"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[We further note that the account has accrued bank charges which remain outstanding, and continue to accrued interest at the Bank’s base rate (currently at ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="252" y="167" width="170" height="30" uuid="65d3a2f8-d4da-4348-8af7-014c8941a577"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[% per annum) plus a margin of ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="215" y="167" width="90" height="17" uuid="0657a3f3-9b92-4e51-9569-c001383783d7">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{interesetRate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="419" y="167" width="100" height="30" uuid="108d401f-e3d4-4299-b5e8-bc1d54af3449"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[% per annum.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="404" y="167" width="60" height="24" uuid="df6023ba-ccae-4891-a909-b55a38ec5c80"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{margin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="183" width="572" height="31" uuid="6b2dd043-40d4-4886-b11e-aab912f0855e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Kindly but urgently make arrangements to regularize the overdraft as soon as possible, but in any event not later than fourteen (14) days from the date of this letter.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="212" width="572" height="38" uuid="4a2f5db6-660d-44f1-8563-04e755f01305"/>
+				<textElement>
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[Please note that if the overdraft is not cleared within the aforesaid timeline, the Bank reserves the sole right to take any measure that it may deem fit to mitigate any further losses, including closing the account without any further reference to you.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="244" width="570" height="30" uuid="7cf93eb9-6f32-43f0-af59-aa5793d50519"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11"/>
+				</textElement>
+				<text><![CDATA[In case you require any clarification in regard to the above, kindly contact the undersigned.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="277" width="100" height="19" uuid="50ed21b2-b379-4f71-9300-e57bb87b105a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Yours faithfully,]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="286" width="380" height="32" uuid="418ffafa-400d-459f-9167-081e1fad0253">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ead0d7b5-a044-4937-9756-1bf7f4d6660f"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{drafter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="314" width="380" height="30" uuid="e2765e03-b528-44d4-b938-2a72da1fcb1e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{branchName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="350" width="550" height="50" uuid="9d2bd7c6-711b-499b-ae9d-f3565a4bb5cc"/>
+				<textElement>
+					<font fontName="Times New Roman" size="9"/>
+				</textElement>
+				<text><![CDATA[CfC Stanbic Bank, CfC Stanbic Bank Building
+P.O. Box 72833 – 00200, Nairobi,  Kenya www.cfcstanbicbank.co.ke
+Tel. Switchboard: +254 (041) 2123 000 / 2123 200
+SWIFT: SBICKENXemail:ngeerae@stanbic.com
+]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="110" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="110" uuid="dc08f3f5-63f7-47cf-80a4-1fc90f70be40"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Times New Roman" size="9" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[CfC Stanbic Bank Limited Registration No. 9520. A member of the Standard Bank Group of South Africa
+Directors: F. N. Ojiambo, MBS, SC (Chairman), Philip Odera (Chief Executive), G. R. Brackenridge*, R. W. Kimotho,  K. Mbathi, R. T. Ngobi, E. W. Njoroge,  P. N. Gethi, M.A Blades***, C. J. Blandford-Newson***		                                                                                                                                                                                   * South African  ***South African & British
+]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
